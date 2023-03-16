@@ -3,11 +3,14 @@
 function palindrome(str){
     var lowerStr = str.toLowerCase().split(" ").join("");
 	var start = 0;
-	var end = str.length-1;
+	var end = lowerStr.length-1;
 	while (start != end) {
-		if(str[start] !== str[end]){
+		if(lowerStr[start] !== lowerStr[end]){
 			return false;
 		}
+
+		start++;
+		end--;
 	}
 	return true;
 }
