@@ -7,6 +7,7 @@ function palindrome(str){
 	while (start != end) {
 		if(str.charAt(start) != str.charAt(end)){
 			return false;
+			break;
 		}
 	}
 	return true;
